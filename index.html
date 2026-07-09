@@ -49,7 +49,7 @@
   --max:1120px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -234,8 +234,8 @@ section{padding:96px 0}
 footer{border-top:1px solid var(--ligne);padding:46px 0 54px;font-size:13.5px;color:var(--acier)}
 .foot-top{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px}
 .foot-top img{height:24px;opacity:.85}
-.foot-links{display:flex;gap:22px;list-style:none}
-.foot-links a{text-decoration:none;color:var(--acier)}
+.foot-links{display:flex;gap:12px;list-style:none;flex-wrap:wrap}
+.foot-links a{text-decoration:none;color:var(--acier);display:inline-block;padding:10px 6px;min-height:44px;line-height:24px}
 .foot-links a:hover{color:var(--brume)}
 .legal{line-height:1.8;border-top:1px solid var(--ligne);padding-top:24px}
 .legal .mono{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--acier);display:block;margin-bottom:8px}
@@ -249,25 +249,54 @@ footer{border-top:1px solid var(--ligne);padding:46px 0 54px;font-size:13.5px;co
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["ProfessionalService", "Organization"],
+      "@type": "ProfessionalService",
       "@id": "https://marzin-consulting.fr/#organization",
       "name": "Marzin Consulting",
-      "legalName": "Marzin Consulting SASU",
+      "legalName": "Marzin Consulting",
       "url": "https://marzin-consulting.fr/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://marzin-consulting.fr/alan-marzin-consultant-informatique-rennes.jpg",
+        "width": 1066,
+        "height": 1332
+      },
       "image": "https://marzin-consulting.fr/alan-marzin-consultant-informatique-rennes.jpg",
       "description": "Conseil informatique, stratégie digitale, développement sur mesure, architecture logicielle et mise en production. Un seul interlocuteur, basé à Rennes, en déplacement partout en France et à distance.",
       "email": "alan@marzin-consulting.fr",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
       "founder": { "@id": "https://marzin-consulting.fr/#alan-marzin" },
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Bureau 3, 5 Allée de la Grande Treille",
         "addressLocality": "Rennes",
         "postalCode": "35000",
         "addressRegion": "Bretagne",
         "addressCountry": "FR"
       },
-      "areaServed": { "@type": "Country", "name": "France" },
-      "knowsAbout": ["Conseil informatique", "Architecture logicielle", "Développement sur mesure", "Mise en production", "DevOps", "IA appliquée", "Stratégie digitale"],
-      "priceRange": "€€"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.117266,
+        "longitude": -1.677793
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "France" },
+        { "@type": "City", "name": "Rennes" }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "alan@marzin-consulting.fr",
+        "areaServed": "FR",
+        "availableLanguage": ["French", "English"]
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "knowsAbout": ["Conseil informatique", "Architecture logicielle", "Développement sur mesure", "Mise en production", "DevOps", "IA appliquée", "Stratégie digitale"]
     },
     {
       "@type": "Person",
@@ -281,6 +310,7 @@ footer{border-top:1px solid var(--ligne);padding:46px 0 54px;font-size:13.5px;co
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Rennes",
+        "postalCode": "35000",
         "addressCountry": "FR"
       }
     },

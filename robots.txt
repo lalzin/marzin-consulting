@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marzin-consulting.fr/sitemap.xml
