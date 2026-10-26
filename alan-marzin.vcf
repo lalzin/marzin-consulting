@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Marzin;Alan;;;
+FN:Alan Marzin
+ORG:Marzin Consulting
+TITLE:Consultant informatique & stratégie digitale
+EMAIL;TYPE=INTERNET,WORK:alan@marzin-consulting.fr
+URL;TYPE=WORK:https://marzin-consulting.fr/
+ADR;TYPE=WORK:;Bureau 3;5 Allée de la Grande Treille;Rennes;;35000;France
+NOTE:Conseil informatique\, développement et mise en production. Rennes & France.
+END:VCARD

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alan Marzin · Marzin Consulting</title>
+<meta name="description" content="Alan Marzin, consultant informatique à Rennes. Site, contact par mail et fiche contact à enregistrer.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://marzin-consulting.fr/liens">
+<meta name="theme-color" content="#131315">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://marzin-consulting.fr/liens">
+<meta property="og:title" content="Alan Marzin · Marzin Consulting">
+<meta property="og:description" content="Consultant informatique à Rennes. Conseil, développement sur mesure et mise en production.">
+<meta property="og:image" content="https://marzin-consulting.fr/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+<style>
+body{background:var(--bg-alt);min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+.card{width:100%;max-width:440px;margin:0 auto;padding:56px 20px 24px;flex:1;display:flex;flex-direction:column;align-items:center;text-align:center}
+.card .brand{width:150px;height:auto;margin-bottom:40px}
+.card .photo{width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:center 18%;background:var(--bg)}
+.card h1{font-size:30px;letter-spacing:-.03em;margin-top:20px}
+.card .role{color:var(--muted);font-size:17px;margin-top:4px}
+.list{list-style:none;width:100%;margin-top:34px;background:var(--bg);border-radius:18px;overflow:hidden}
+.row{position:relative;display:flex;align-items:center;gap:14px;padding:14px 18px;color:var(--text);text-align:left;min-height:64px}
+.list li+li .row::before{content:"";position:absolute;top:0;left:66px;right:0;border-top:1px solid var(--line)}
+.row:hover{text-decoration:none;background:color-mix(in srgb, var(--bg-alt) 55%, var(--bg))}
+.ico{flex:none;width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:var(--btn-bg)}
+.ico svg{width:19px;height:19px;stroke:var(--btn-text);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.row .t{flex:1;min-width:0;display:flex;flex-direction:column}
+.row strong{font-weight:500;font-size:17px}
+.row small{color:var(--muted);font-size:14px;overflow-wrap:anywhere}
+.row .chev{flex:none;width:8px;height:8px;border-right:2px solid var(--line);border-top:2px solid var(--line);transform:rotate(45deg);margin-right:4px}
+.row .chev.down{transform:rotate(135deg)}
+.copy{margin-top:18px;background:none;border:0;color:var(--link);font:inherit;font-size:15px;cursor:pointer;padding:10px}
+.foot{text-align:center;color:var(--muted);font-size:12px;padding:24px 20px 32px}
+.foot a{color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="card">
+  <a href="/" aria-label="Marzin Consulting, site">
+    <img class="brand" src="/brand/logo-argent.svg" width="150" height="38" alt="Marzin Consulting">
+  </a>
+  <picture>
+    <source type="image/webp" srcset="/alan-marzin-560.webp">
+    <img class="photo" src="/alan-marzin-consultant-informatique-rennes.jpg" width="112" height="112" alt="Portrait d'Alan Marzin">
+  </picture>
+  <h1>Alan Marzin</h1>
+  <p class="role">Consultant informatique à Rennes</p>
+
+  <ul class="list">
+    <li>
+      <a class="row" href="mailto:alan@marzin-consulting.fr?subject=Prise%20de%20contact">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg></span>
+        <span class="t"><strong>M'envoyer un mail</strong><small>alan@marzin-consulting.fr</small></span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+    </li>
+    <li>
+      <a class="row" href="/">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg></span>
+        <span class="t"><strong>Voir le site</strong><small>marzin-consulting.fr</small></span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+    </li>
+    <li>
+      <a class="row" href="/alan-marzin.vcf" download="Alan Marzin.vcf">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="8.5" r="3.5"/><path d="M4 20c.8-3.6 3.6-5.5 7-5.5 1.6 0 3 .4 4.2 1.2"/><path d="M19 14v6M16 17h6"/></svg></span>
+        <span class="t"><strong>Enregistrer le contact</strong><small>Ajouter à mes contacts</small></span>
+        <span class="chev down" aria-hidden="true"></span>
+      </a>
+    </li>
+  </ul>
+
+  <button class="copy" type="button" id="copy">Copier l'adresse mail</button>
+</main>
+
+<p class="foot"><a href="/">© 2026 Marzin Consulting</a> · <a href="/mentions-legales">Mentions légales</a></p>
+
+<script>
+(function(){
+  var b=document.getElementById('copy'),m='alan@marzin-consulting.fr',l=b.textContent;
+  b.addEventListener('click',function(){
+    var ok=function(){b.textContent='Adresse copiée';setTimeout(function(){b.textContent=l},2000)};
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(m).then(ok,function(){prompt('Adresse mail :',m)})}
+    else{prompt('Adresse mail :',m)}
+  });
+})();
+</script>
+</body>
+</html>
