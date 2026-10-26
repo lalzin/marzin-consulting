@@ -6,6 +6,9 @@
     <image:image>
       <image:loc>https://www.marzin-consulting.fr/alan-marzin-consultant-informatique-rennes.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://www.marzin-consulting.fr/alan-marzin-conference.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://www.marzin-consulting.fr/mentions-legales</loc>
