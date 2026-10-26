@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://marzin-consulting.fr/</loc>
+    <loc>https://www.marzin-consulting.fr/</loc>
     <lastmod>2026-10-26</lastmod>
     <image:image>
-      <image:loc>https://marzin-consulting.fr/alan-marzin-consultant-informatique-rennes.jpg</image:loc>
+      <image:loc>https://www.marzin-consulting.fr/alan-marzin-consultant-informatique-rennes.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://marzin-consulting.fr/mentions-legales</loc>
+    <loc>https://www.marzin-consulting.fr/mentions-legales</loc>
     <lastmod>2026-10-26</lastmod>
   </url>
 </urlset>
